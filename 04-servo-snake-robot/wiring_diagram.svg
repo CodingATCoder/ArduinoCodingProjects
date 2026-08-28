@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="880" viewBox="0 0 1020 880" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1020" height="880" fill="#ffffff"/>
+<text x="510.0" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Project 4: Four-Servo Snake Robot</text>
+<rect x="40" y="90" width="200" height="208" rx="10" fill="#e8f0fe" stroke="#2c5282" stroke-width="2"/>
+<text x="140.0" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#1a365d">Arduino Uno</text>
+<line x1="54" y1="130" x2="226" y2="130" stroke="#2c5282" stroke-width="1"/>
+<circle cx="234" cy="156" r="4" fill="#2c5282"/>
+<text x="222" y="161" text-anchor="end" font-size="13" fill="#1a365d">D2</text>
+<circle cx="234" cy="184" r="4" fill="#2c5282"/>
+<text x="222" y="189" text-anchor="end" font-size="13" fill="#1a365d">D3</text>
+<circle cx="234" cy="212" r="4" fill="#2c5282"/>
+<text x="222" y="217" text-anchor="end" font-size="13" fill="#1a365d">D4</text>
+<circle cx="234" cy="240" r="4" fill="#2c5282"/>
+<text x="222" y="245" text-anchor="end" font-size="13" fill="#1a365d">D5</text>
+<circle cx="234" cy="268" r="4" fill="#2c5282"/>
+<text x="222" y="273" text-anchor="end" font-size="13" fill="#1a365d">5V</text>
+<circle cx="234" cy="296" r="4" fill="#2c5282"/>
+<text x="222" y="301" text-anchor="end" font-size="13" fill="#1a365d">GND</text>
+<rect x="620" y="90" width="340" height="121" rx="10" fill="#fef8f2" stroke="#c05621" stroke-width="2"/>
+<text x="790.0" y="114" text-anchor="middle" font-size="14" font-weight="700" fill="#c05621">
+<tspan x="790.0" dy="0">Servo 1 (segment 1)</tspan>
+</text>
+<circle cx="620" cy="137" r="4" fill="#c05621"/>
+<text x="630" y="142" font-size="12" fill="#4a4a4a">Signal</text>
+<path d="M 234 156 C 427.0 156, 427.0 137, 620 137" fill="none" stroke="#c05621" stroke-width="2"/>
+<circle cx="620" cy="161" r="4" fill="#c05621"/>
+<text x="630" y="166" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 268 C 427.0 268, 427.0 161, 620 161" fill="none" stroke="#c05621" stroke-width="2"/>
+<circle cx="620" cy="185" r="4" fill="#c05621"/>
+<text x="630" y="190" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 296 C 427.0 296, 427.0 185, 620 185" fill="none" stroke="#c05621" stroke-width="2"/>
+<rect x="620" y="237" width="340" height="121" rx="10" fill="#fef8f2" stroke="#2f855a" stroke-width="2"/>
+<text x="790.0" y="261" text-anchor="middle" font-size="14" font-weight="700" fill="#2f855a">
+<tspan x="790.0" dy="0">Servo 2 (segment 2)</tspan>
+</text>
+<circle cx="620" cy="284" r="4" fill="#2f855a"/>
+<text x="630" y="289" font-size="12" fill="#4a4a4a">Signal</text>
+<path d="M 234 184 C 427.0 184, 427.0 284, 620 284" fill="none" stroke="#2f855a" stroke-width="2"/>
+<circle cx="620" cy="308" r="4" fill="#2f855a"/>
+<text x="630" y="313" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 268 C 427.0 268, 427.0 308, 620 308" fill="none" stroke="#2f855a" stroke-width="2"/>
+<circle cx="620" cy="332" r="4" fill="#2f855a"/>
+<text x="630" y="337" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 296 C 427.0 296, 427.0 332, 620 332" fill="none" stroke="#2f855a" stroke-width="2"/>
+<rect x="620" y="384" width="340" height="121" rx="10" fill="#fef8f2" stroke="#805ad5" stroke-width="2"/>
+<text x="790.0" y="408" text-anchor="middle" font-size="14" font-weight="700" fill="#805ad5">
+<tspan x="790.0" dy="0">Servo 3 (segment 3)</tspan>
+</text>
+<circle cx="620" cy="431" r="4" fill="#805ad5"/>
+<text x="630" y="436" font-size="12" fill="#4a4a4a">Signal</text>
+<path d="M 234 212 C 427.0 212, 427.0 431, 620 431" fill="none" stroke="#805ad5" stroke-width="2"/>
+<circle cx="620" cy="455" r="4" fill="#805ad5"/>
+<text x="630" y="460" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 268 C 427.0 268, 427.0 455, 620 455" fill="none" stroke="#805ad5" stroke-width="2"/>
+<circle cx="620" cy="479" r="4" fill="#805ad5"/>
+<text x="630" y="484" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 296 C 427.0 296, 427.0 479, 620 479" fill="none" stroke="#805ad5" stroke-width="2"/>
+<rect x="620" y="531" width="340" height="121" rx="10" fill="#fef8f2" stroke="#b83280" stroke-width="2"/>
+<text x="790.0" y="555" text-anchor="middle" font-size="14" font-weight="700" fill="#b83280">
+<tspan x="790.0" dy="0">Servo 4 (segment 4)</tspan>
+</text>
+<circle cx="620" cy="578" r="4" fill="#b83280"/>
+<text x="630" y="583" font-size="12" fill="#4a4a4a">Signal</text>
+<path d="M 234 240 C 427.0 240, 427.0 578, 620 578" fill="none" stroke="#b83280" stroke-width="2"/>
+<circle cx="620" cy="602" r="4" fill="#b83280"/>
+<text x="630" y="607" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 268 C 427.0 268, 427.0 602, 620 602" fill="none" stroke="#b83280" stroke-width="2"/>
+<circle cx="620" cy="626" r="4" fill="#b83280"/>
+<text x="630" y="631" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 296 C 427.0 296, 427.0 626, 620 626" fill="none" stroke="#b83280" stroke-width="2"/>
+<text x="40" y="696" font-size="12" fill="#555555">Servos fire in sequence (4,3,2,1) to produce a rippling / undulating gait.</text>
+<text x="40" y="720" font-size="12" fill="#555555">Fixed: original code called servo3.write(-90) and servo1.write(-90), which is</text>
+<text x="40" y="744" font-size="12" fill="#555555">outside the valid 0-180 degree range for Servo::write(). Changed to 140 degrees</text>
+<text x="40" y="768" font-size="12" fill="#555555">(symmetric with the 40-degree position around the 90-degree center) so each</text>
+<text x="40" y="792" font-size="12" fill="#555555">servo now sweeps cleanly between 40 and 140 degrees.</text>
+<text x="40" y="816" font-size="12" fill="#555555">Power all 4 servos from a dedicated 5-6V supply, not the Uno's 5V pin, and tie</text>
+<text x="40" y="840" font-size="12" fill="#555555">grounds together -- 4 servos can exceed what the Uno's regulator can supply.</text>
+</svg>

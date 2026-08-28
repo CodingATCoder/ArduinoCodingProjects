@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="627" viewBox="0 0 1020 627" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1020" height="627" fill="#ffffff"/>
+<text x="510.0" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Project 5: LDR-Controlled LED Brightness Indicator</text>
+<rect x="40" y="90" width="200" height="160" rx="10" fill="#e8f0fe" stroke="#2c5282" stroke-width="2"/>
+<text x="140.0" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#1a365d">Arduino Uno</text>
+<line x1="54" y1="130" x2="226" y2="130" stroke="#2c5282" stroke-width="1"/>
+<circle cx="234" cy="156" r="4" fill="#2c5282"/>
+<text x="222" y="161" text-anchor="end" font-size="13" fill="#1a365d">A0</text>
+<circle cx="234" cy="184" r="4" fill="#2c5282"/>
+<text x="222" y="189" text-anchor="end" font-size="13" fill="#1a365d">D6</text>
+<circle cx="234" cy="212" r="4" fill="#2c5282"/>
+<text x="222" y="217" text-anchor="end" font-size="13" fill="#1a365d">5V</text>
+<circle cx="234" cy="240" r="4" fill="#2c5282"/>
+<text x="222" y="245" text-anchor="end" font-size="13" fill="#1a365d">GND</text>
+<rect x="620" y="90" width="340" height="138" rx="10" fill="#fef8f2" stroke="#c05621" stroke-width="2"/>
+<text x="790.0" y="114" text-anchor="middle" font-size="14" font-weight="700" fill="#c05621">
+<tspan x="790.0" dy="0">LDR Voltage Divider</tspan>
+<tspan x="790.0" dy="17">(LDR + fixed resistor)</tspan>
+</text>
+<circle cx="620" cy="154" r="4" fill="#c05621"/>
+<text x="630" y="159" font-size="12" fill="#4a4a4a">Divider midpoint</text>
+<path d="M 234 156 C 427.0 156, 427.0 154, 620 154" fill="none" stroke="#c05621" stroke-width="2"/>
+<circle cx="620" cy="178" r="4" fill="#c05621"/>
+<text x="630" y="183" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 212 C 427.0 212, 427.0 178, 620 178" fill="none" stroke="#c05621" stroke-width="2"/>
+<circle cx="620" cy="202" r="4" fill="#c05621"/>
+<text x="630" y="207" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 240 C 427.0 240, 427.0 202, 620 202" fill="none" stroke="#c05621" stroke-width="2"/>
+<rect x="620" y="254" width="340" height="97" rx="10" fill="#fef8f2" stroke="#2f855a" stroke-width="2"/>
+<text x="790.0" y="278" text-anchor="middle" font-size="14" font-weight="700" fill="#2f855a">
+<tspan x="790.0" dy="0">LED (+ current-limiting resistor)</tspan>
+</text>
+<circle cx="620" cy="301" r="4" fill="#2f855a"/>
+<text x="630" y="306" font-size="12" fill="#4a4a4a">Anode (+)</text>
+<path d="M 234 184 C 427.0 184, 427.0 301, 620 301" fill="none" stroke="#2f855a" stroke-width="2"/>
+<circle cx="620" cy="325" r="4" fill="#2f855a"/>
+<text x="630" y="330" font-size="12" fill="#4a4a4a">Cathode (-)</text>
+<path d="M 234 240 C 427.0 240, 427.0 325, 620 325" fill="none" stroke="#2f855a" stroke-width="2"/>
+<text x="40" y="395" font-size="12" fill="#555555">Reads ambient light on A0. As written (DARK-&gt;LOW, BRIGHT-&gt;HIGH), the LED on D6</text>
+<text x="40" y="419" font-size="12" fill="#555555">turns ON when it's bright and OFF when it's dark -- a 'there's enough light'</text>
+<text x="40" y="443" font-size="12" fill="#555555">indicator, not a night light. Swap the two digitalWrite(6,...) calls if you want</text>
+<text x="40" y="467" font-size="12" fill="#555555">night-light behavior (LED ON in the dark) instead.</text>
+<text x="40" y="491" font-size="12" fill="#555555">Fixed: the original if/else bodies had no braces, so digitalWrite(6, LOW) and</text>
+<text x="40" y="515" font-size="12" fill="#555555">digitalWrite(6, HIGH) both ran unconditionally every loop (LED effectively always</text>
+<text x="40" y="539" font-size="12" fill="#555555">ended up ON regardless of light level). Added braces so only the correct branch's</text>
+<text x="40" y="563" font-size="12" fill="#555555">digitalWrite() runs.</text>
+<text x="40" y="587" font-size="12" fill="#555555">Use a resistor in series with the LED (e.g. 220-330 ohm) to protect it from D6.</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="849" viewBox="0 0 1020 849" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1020" height="849" fill="#ffffff"/>
+<text x="510.0" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Project 2: Line-Following Robot (2-Servo Steering)</text>
+<rect x="40" y="90" width="200" height="236" rx="10" fill="#e8f0fe" stroke="#2c5282" stroke-width="2"/>
+<text x="140.0" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#1a365d">Arduino Uno</text>
+<line x1="54" y1="130" x2="226" y2="130" stroke="#2c5282" stroke-width="1"/>
+<circle cx="234" cy="156" r="4" fill="#2c5282"/>
+<text x="222" y="161" text-anchor="end" font-size="13" fill="#1a365d">D2</text>
+<circle cx="234" cy="184" r="4" fill="#2c5282"/>
+<text x="222" y="189" text-anchor="end" font-size="13" fill="#1a365d">D3</text>
+<circle cx="234" cy="212" r="4" fill="#2c5282"/>
+<text x="222" y="217" text-anchor="end" font-size="13" fill="#1a365d">D4</text>
+<circle cx="234" cy="240" r="4" fill="#2c5282"/>
+<text x="222" y="245" text-anchor="end" font-size="13" fill="#1a365d">D8</text>
+<circle cx="234" cy="268" r="4" fill="#2c5282"/>
+<text x="222" y="273" text-anchor="end" font-size="13" fill="#1a365d">D9</text>
+<circle cx="234" cy="296" r="4" fill="#2c5282"/>
+<text x="222" y="301" text-anchor="end" font-size="13" fill="#1a365d">5V</text>
+<circle cx="234" cy="324" r="4" fill="#2c5282"/>
+<text x="222" y="329" text-anchor="end" font-size="13" fill="#1a365d">GND</text>
+<rect x="620" y="90" width="340" height="121" rx="10" fill="#fef8f2" stroke="#c05621" stroke-width="2"/>
+<text x="790.0" y="114" text-anchor="middle" font-size="14" font-weight="700" fill="#c05621">
+<tspan x="790.0" dy="0">Steering Servo 1 (left)</tspan>
+</text>
+<circle cx="620" cy="137" r="4" fill="#c05621"/>
+<text x="630" y="142" font-size="12" fill="#4a4a4a">Signal</text>
+<path d="M 234 156 C 427.0 156, 427.0 137, 620 137" fill="none" stroke="#c05621" stroke-width="2"/>
+<circle cx="620" cy="161" r="4" fill="#c05621"/>
+<text x="630" y="166" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 296 C 427.0 296, 427.0 161, 620 161" fill="none" stroke="#c05621" stroke-width="2"/>
+<circle cx="620" cy="185" r="4" fill="#c05621"/>
+<text x="630" y="190" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 324 C 427.0 324, 427.0 185, 620 185" fill="none" stroke="#c05621" stroke-width="2"/>
+<rect x="620" y="237" width="340" height="121" rx="10" fill="#fef8f2" stroke="#2f855a" stroke-width="2"/>
+<text x="790.0" y="261" text-anchor="middle" font-size="14" font-weight="700" fill="#2f855a">
+<tspan x="790.0" dy="0">Steering Servo 2 (right)</tspan>
+</text>
+<circle cx="620" cy="284" r="4" fill="#2f855a"/>
+<text x="630" y="289" font-size="12" fill="#4a4a4a">Signal</text>
+<path d="M 234 212 C 427.0 212, 427.0 284, 620 284" fill="none" stroke="#2f855a" stroke-width="2"/>
+<circle cx="620" cy="308" r="4" fill="#2f855a"/>
+<text x="630" y="313" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 296 C 427.0 296, 427.0 308, 620 308" fill="none" stroke="#2f855a" stroke-width="2"/>
+<circle cx="620" cy="332" r="4" fill="#2f855a"/>
+<text x="630" y="337" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 324 C 427.0 324, 427.0 332, 620 332" fill="none" stroke="#2f855a" stroke-width="2"/>
+<rect x="620" y="384" width="340" height="121" rx="10" fill="#fef8f2" stroke="#805ad5" stroke-width="2"/>
+<text x="790.0" y="408" text-anchor="middle" font-size="14" font-weight="700" fill="#805ad5">
+<tspan x="790.0" dy="0">IR Line Sensor Module</tspan>
+</text>
+<circle cx="620" cy="431" r="4" fill="#805ad5"/>
+<text x="630" y="436" font-size="12" fill="#4a4a4a">D0 (digital out)</text>
+<path d="M 234 184 C 427.0 184, 427.0 431, 620 431" fill="none" stroke="#805ad5" stroke-width="2"/>
+<circle cx="620" cy="455" r="4" fill="#805ad5"/>
+<text x="630" y="460" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 296 C 427.0 296, 427.0 455, 620 455" fill="none" stroke="#805ad5" stroke-width="2"/>
+<circle cx="620" cy="479" r="4" fill="#805ad5"/>
+<text x="630" y="484" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 324 C 427.0 324, 427.0 479, 620 479" fill="none" stroke="#805ad5" stroke-width="2"/>
+<rect x="620" y="531" width="340" height="162" rx="10" fill="#fef8f2" stroke="#b83280" stroke-width="2"/>
+<text x="790.0" y="555" text-anchor="middle" font-size="14" font-weight="700" fill="#b83280">
+<tspan x="790.0" dy="0">HC-SR04 Ultrasonic</tspan>
+<tspan x="790.0" dy="17">(wired, not yet used in the loop)</tspan>
+</text>
+<circle cx="620" cy="595" r="4" fill="#b83280"/>
+<text x="630" y="600" font-size="12" fill="#4a4a4a">Trig</text>
+<path d="M 234 268 C 427.0 268, 427.0 595, 620 595" fill="none" stroke="#b83280" stroke-width="2"/>
+<circle cx="620" cy="619" r="4" fill="#b83280"/>
+<text x="630" y="624" font-size="12" fill="#4a4a4a">Echo</text>
+<path d="M 234 240 C 427.0 240, 427.0 619, 620 619" fill="none" stroke="#b83280" stroke-width="2"/>
+<circle cx="620" cy="643" r="4" fill="#b83280"/>
+<text x="630" y="648" font-size="12" fill="#4a4a4a">VCC</text>
+<path d="M 234 296 C 427.0 296, 427.0 643, 620 643" fill="none" stroke="#b83280" stroke-width="2"/>
+<circle cx="620" cy="667" r="4" fill="#b83280"/>
+<text x="630" y="672" font-size="12" fill="#4a4a4a">GND</text>
+<path d="M 234 324 C 427.0 324, 427.0 667, 620 667" fill="none" stroke="#b83280" stroke-width="2"/>
+<text x="40" y="737" font-size="12" fill="#555555">Line sensor drives servo1/servo2 in opposite directions to steer toward the line.</text>
+<text x="40" y="761" font-size="12" fill="#555555">Ultrasonic.h / pins 8+9 are wired and pinMode'd but getUltraSonicDistance() is not</text>
+<text x="40" y="785" font-size="12" fill="#555555">yet called from loop() -- ready to wire in obstacle-avoidance later.</text>
+<text x="40" y="809" font-size="12" fill="#555555">Power servos from a separate 5-6V supply if you see brownouts/resets under load.</text>
+</svg>
