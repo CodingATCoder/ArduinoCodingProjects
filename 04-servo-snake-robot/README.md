@@ -16,12 +16,16 @@ See [`wiring_diagram.svg`](wiring_diagram.svg).
 ## Libraries required
 - `Servo` (bundled with the Arduino IDE)
 
-## Fixed from the original code
+## Changed from the original code
 The original sketch called `servo3.write(-90)` and `servo1.write(-90)`.
-`Servo::write()` only accepts **0–180 degrees** — a negative value is out of
-range and produces undefined/unreliable servo behavior. This has been changed
-to **140 degrees**, which mirrors the 40-degree position symmetrically around
-the 90-degree center, so each servo now sweeps cleanly between 40° and 140°.
+`Servo::write()`'s valid input is **0–180 degrees**, but — verified against the
+Arduino Servo library's source — out-of-range values aren't undefined: negative
+values are silently clamped to 0 (`if(value < 0) value = 0;` in `Servo.cpp`).
+So the original code wasn't buggy in the sense of crashing or behaving
+unpredictably — those two servos were just always driven to 0°, giving an
+asymmetric 0°↔40° sweep instead of a symmetric one. Changed to **140 degrees**,
+which mirrors the 40-degree position symmetrically around the 90-degree
+center, so each servo now sweeps cleanly between 40° and 140°.
 
 ## Notes
 - Power all 4 servos from a dedicated 5–6V supply (not the Uno's 5V pin), and

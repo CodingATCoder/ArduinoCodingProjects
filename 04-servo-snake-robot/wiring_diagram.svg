@@ -69,10 +69,10 @@
 <text x="630" y="631" font-size="12" fill="#4a4a4a">GND</text>
 <path d="M 234 296 C 427.0 296, 427.0 626, 620 626" fill="none" stroke="#b83280" stroke-width="2"/>
 <text x="40" y="696" font-size="12" fill="#555555">Servos fire in sequence (4,3,2,1) to produce a rippling / undulating gait.</text>
-<text x="40" y="720" font-size="12" fill="#555555">Fixed: original code called servo3.write(-90) and servo1.write(-90), which is</text>
-<text x="40" y="744" font-size="12" fill="#555555">outside the valid 0-180 degree range for Servo::write(). Changed to 140 degrees</text>
-<text x="40" y="768" font-size="12" fill="#555555">(symmetric with the 40-degree position around the 90-degree center) so each</text>
-<text x="40" y="792" font-size="12" fill="#555555">servo now sweeps cleanly between 40 and 140 degrees.</text>
+<text x="40" y="720" font-size="12" fill="#555555">Changed: original code called servo3.write(-90) and servo1.write(-90). The Servo</text>
+<text x="40" y="744" font-size="12" fill="#555555">library actually clamps negative angles to 0 (verified in Servo.cpp), so this was</text>
+<text x="40" y="768" font-size="12" fill="#555555">not undefined behavior -- those servos always moved to 0 deg, an asymmetric</text>
+<text x="40" y="792" font-size="12" fill="#555555">0-40 sweep. Changed to 140 deg for a symmetric 40&lt;-&gt;140 sweep instead.</text>
 <text x="40" y="816" font-size="12" fill="#555555">Power all 4 servos from a dedicated 5-6V supply, not the Uno's 5V pin, and tie</text>
 <text x="40" y="840" font-size="12" fill="#555555">grounds together -- 4 servos can exceed what the Uno's regulator can supply.</text>
 </svg>

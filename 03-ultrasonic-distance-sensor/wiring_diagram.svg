@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="406" viewBox="0 0 1020 406" font-family="Helvetica, Arial, sans-serif">
-<rect x="0" y="0" width="1020" height="406" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="454" viewBox="0 0 1020 454" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1020" height="454" fill="#ffffff"/>
 <text x="510.0" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Project 3: Ultrasonic Distance Sensor (Serial Readout)</text>
 <rect x="40" y="90" width="200" height="160" rx="10" fill="#e8f0fe" stroke="#2c5282" stroke-width="2"/>
 <text x="140.0" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#1a365d">Arduino Uno</text>
@@ -29,7 +29,9 @@
 <text x="630" y="214" font-size="12" fill="#4a4a4a">GND</text>
 <path d="M 234 240 C 427.0 240, 427.0 209, 620 209" fill="none" stroke="#c05621" stroke-width="2"/>
 <text x="40" y="294" font-size="12" fill="#555555">Prints live distance (cm) to Serial Monitor at 115200 baud every ~200ms.</text>
-<text x="40" y="318" font-size="12" fill="#555555">Note: pulseIn(8, HIGH) here has no timeout, so it can block indefinitely if no</text>
-<text x="40" y="342" font-size="12" fill="#555555">echo returns (sensor unplugged / object out of range). Consider a timeout, e.g.</text>
-<text x="40" y="366" font-size="12" fill="#555555">pulseIn(8, HIGH, 30000), for a more robust standalone sketch.</text>
+<text x="40" y="318" font-size="12" fill="#555555">Fixed: the distance formula divisor was 2000.0, reporting distances ~10x too</text>
+<text x="40" y="342" font-size="12" fill="#555555">large (a 100cm object read as ~1000cm). Corrected to 20000.0.</text>
+<text x="40" y="366" font-size="12" fill="#555555">pulseIn(8, HIGH) has no explicit timeout, so it uses Arduino's default 1-second</text>
+<text x="40" y="390" font-size="12" fill="#555555">timeout (returns 0, doesn't hang forever). A shorter explicit timeout, e.g.</text>
+<text x="40" y="414" font-size="12" fill="#555555">pulseIn(8, HIGH, 30000), gives faster/more predictable readings.</text>
 </svg>

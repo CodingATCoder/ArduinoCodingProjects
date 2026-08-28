@@ -5,9 +5,13 @@
 // WIRING: servo1->pin2, servo2->pin3, servo3->pin4, servo4->pin5.
 // See wiring_diagram.svg.
 //
-// FIXED: the original sketch called servo3.write(-90) and
-// servo1.write(-90). Servo::write() only accepts 0-180 degrees, so
-// -90 was out of range and produced undefined/unreliable behavior.
+// CHANGED: the original sketch called servo3.write(-90) and
+// servo1.write(-90). The Arduino Servo library actually clamps
+// out-of-range angle values rather than behaving unpredictably --
+// its write() silently clamps negative values to 0 (see Servo.cpp:
+// "if(value < 0) value = 0;") -- so -90 was not a crash or undefined
+// behavior, it just always drove those two servos to 0 degrees,
+// giving an asymmetric 0<->40 sweep instead of a symmetric one.
 // Changed to 140 degrees, which mirrors the 40-degree position
 // symmetrically around the 90-degree center, so each servo now
 // sweeps cleanly between 40 and 140 degrees.

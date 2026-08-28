@@ -28,7 +28,16 @@ Each project folder contains:
 These sketches started as working code from individual sessions with an
 OSOYOO robot-car kit and assorted sensor/servo experiments. They've been
 reorganized here into one project per folder, each documented with an
-accurate wiring diagram, and a couple of genuine logic bugs found along the
-way have been fixed and called out in the relevant project's README (missing
-braces causing unconditional `digitalWrite()` calls, and an out-of-range
-servo angle). See each project's README for details.
+accurate wiring diagram. A few genuine issues were found and fixed along the
+way, called out in the relevant project's README:
+- **Projects 2 & 3**: the HC-SR04 distance formula was off by exactly 10x
+  (a 100cm object read as ~1000cm) — a divisor bug, corrected and verified
+  numerically.
+- **Project 5**: missing braces on `if`/`else` bodies meant a `digitalWrite()`
+  call ran unconditionally every loop regardless of the branch taken.
+- **Project 4**: an out-of-range `Servo::write(-90)` call — not undefined
+  behavior as first assumed (the Servo library actually clamps negative
+  values to 0), but changed to a valid angle for a symmetric sweep. See that
+  project's README for exactly what was verified and why.
+
+See each project's README for the full details and reasoning.

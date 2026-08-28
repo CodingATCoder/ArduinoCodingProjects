@@ -28,7 +28,7 @@ See [`wiring_diagram.svg`](wiring_diagram.svg).
 > wiring in agreement.
 
 ## Libraries required
-- [IRremote](https://github.com/Arminjo/IRremote) (v3.x/v4.x API — `IRremote.hpp`)
+- [IRremote](https://github.com/Arduino-IRremote/Arduino-IRremote) (v3.x/v4.x API — `IRremote.hpp`)
 - `SoftwareSerial` (bundled with the Arduino IDE)
 
 ## Notes
