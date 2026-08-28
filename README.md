@@ -41,3 +41,6 @@ way, called out in the relevant project's README:
   project's README for exactly what was verified and why.
 
 See each project's README for the full details and reasoning.
+
+## License
+All Rights Reserved — see [LICENSE](LICENSE). Shared publicly for portfolio purposes; please contact the author before reusing.
